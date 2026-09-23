@@ -64,12 +64,12 @@ function App() {
 
       <section className="hero" id="top">
         <div className="hero-grid">
-          <p className="eyebrow"><span className="live-dot" /> Available for meaningful work</p>
+          <p className="eyebrow"><span className="live-dot" /> Founder of FlowRec · Available for meaningful work</p>
           <h1>I make digital<br /><em>things feel</em> human.</h1>
           <div className="hero-bottom">
             <p className="hero-intro">
-              I&apos;m Tejas — a developer and creative builder crafting focused products,
-              expressive interfaces, and tools that earn their place in your workflow.
+              I&apos;m Tejas — founder of FlowRec, developer, and creative builder crafting
+              focused products, expressive interfaces, and tools that earn their place in your workflow.
             </p>
             <a className="circle-link" href="#work" aria-label="See selected work">
               <ArrowDownRight size={26} strokeWidth={1.5} />
@@ -142,7 +142,7 @@ function App() {
           <h2>Part engineer,<br /><em>part observer.</em></h2>
         </div>
         <div className="about-copy">
-          <p className="large-copy">The best digital products don&apos;t ask for attention. They make space for people to do their best work.</p>
+          <p className="large-copy">As the founder of FlowRec, I&apos;m building tools that make space for people to do their best work.</p>
           <p>I care about the intersection of thoughtful design and solid engineering — the invisible systems, the responsive details, and the confidence that comes from software that simply works.</p>
           <div className="about-facts"><div><strong>01</strong><span>Stay curious</span></div><div><strong>02</strong><span>Make it clear</span></div><div><strong>03</strong><span>Ship the work</span></div></div>
         </div>
