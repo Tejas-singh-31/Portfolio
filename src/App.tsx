@@ -18,7 +18,7 @@ const projects = [
       'A privacy-first screen recorder that turns cursor movement into cinematic, polished product videos directly in the browser.',
     tags: ['React', 'Next.js', 'Media APIs'],
     className: 'project-flow',
-    href: 'https://flow-rec.vercel.app/',
+    href: 'https://flowrec.flowrec-dev.workers.dev/',
   },
   {
     number: '02',
