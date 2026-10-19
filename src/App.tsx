@@ -22,7 +22,7 @@ const projects = [
   },
   {
     number: '02',
-    title: 'ViroChop',
+    title: 'VidCut',
     type: 'Product / 2026',
     description:
       'An AI video repurposing studio that turns long-form podcasts and YouTube videos into viral 9:16 shorts with kinetic captions.',
@@ -144,7 +144,7 @@ function App() {
                   <div className="window-body"><div className="window-sidebar" /><div className="window-preview"><i /> <strong>60</strong><small>FPS ENGINE</small></div></div>
                 </div>
               )}
-              {projects[activeProject].title === 'ViroChop' && (
+              {projects[activeProject].title === 'VidCut' && (
                 <div className="clip-window">
                   <div className="clip-phone">
                     <div className="phone-notch" />
