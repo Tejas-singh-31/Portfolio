@@ -32,6 +32,16 @@ const projects = [
   },
   {
     number: '03',
+    title: 'PixelKit',
+    type: 'Product / 2026',
+    description:
+      'A fast, 100% client-side image and PDF studio in the browser. Zero server upload, AI background removal, smart compression, and OCR.',
+    tags: ['Client-side AI', 'Canvas API', 'PDF Tools'],
+    className: 'project-pixel',
+    href: 'https://pixelkit-self.vercel.app/',
+  },
+  {
+    number: '04',
     title: 'Motion studies',
     type: 'Experiments / Ongoing',
     description:
@@ -106,7 +116,7 @@ function App() {
 
       <section className="work-section section" id="work">
         <div className="section-heading">
-          <p className="section-kicker">Selected work <span>03</span></p>
+          <p className="section-kicker">Selected work <span>04</span></p>
           <h2>Ideas, made<br /><em>useful.</em></h2>
           <p className="section-note">A small selection of projects I&apos;ve designed, built, and shipped.</p>
         </div>
@@ -146,6 +156,31 @@ function App() {
                       </div>
                       <div className="phone-waveform">
                         <span /><span /><span /><span /><span /><span /><span />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {projects[activeProject].title === 'PixelKit' && (
+                <div className="pixel-window">
+                  <div className="pixel-frame">
+                    <div className="pixel-top">
+                      <span /><span /><span />
+                      <small>PixelKit Studio</small>
+                    </div>
+                    <div className="pixel-body">
+                      <div className="pixel-badge-row">
+                        <span className="pixel-badge-privacy">100% PRIVATE</span>
+                        <span className="pixel-badge-save">-82% SIZE</span>
+                      </div>
+                      <div className="pixel-canvas-art">
+                        <div className="pixel-target">
+                          <div className="pixel-reticle" />
+                          <div className="pixel-lens" />
+                        </div>
+                      </div>
+                      <div className="pixel-bottom-row">
+                        <small>AI REMOVAL · OCR · WEBP</small>
                       </div>
                     </div>
                   </div>
