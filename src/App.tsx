@@ -22,6 +22,16 @@ const projects = [
   },
   {
     number: '02',
+    title: 'ClipMaker',
+    type: 'Product / 2026',
+    description:
+      'An AI video repurposing studio that turns long-form podcasts and YouTube videos into viral 9:16 shorts with kinetic captions.',
+    tags: ['Next.js', 'AI Video', 'Media APIs'],
+    className: 'project-clip',
+    href: 'https://ai-content-repurpose-nine.vercel.app',
+  },
+  {
+    number: '03',
     title: 'Motion studies',
     type: 'Experiments / Ongoing',
     description:
@@ -96,7 +106,7 @@ function App() {
 
       <section className="work-section section" id="work">
         <div className="section-heading">
-          <p className="section-kicker">Selected work <span>02</span></p>
+          <p className="section-kicker">Selected work <span>03</span></p>
           <h2>Ideas, made<br /><em>useful.</em></h2>
           <p className="section-note">A small selection of projects I&apos;ve designed, built, and shipped.</p>
         </div>
@@ -118,12 +128,30 @@ function App() {
           </div>
           <article className={`project-card ${projects[activeProject].className}`}>
             <div className="card-art">
-              {activeProject === 0 ? (
+              {projects[activeProject].title === 'FlowRec' && (
                 <div className="flow-window">
                   <div className="window-top"><span /><span /><span /><small>FlowRec Studio</small></div>
                   <div className="window-body"><div className="window-sidebar" /><div className="window-preview"><i /> <strong>60</strong><small>FPS ENGINE</small></div></div>
                 </div>
-              ) : (
+              )}
+              {projects[activeProject].title === 'ClipMaker' && (
+                <div className="clip-window">
+                  <div className="clip-phone">
+                    <div className="phone-notch" />
+                    <div className="phone-screen">
+                      <div className="phone-pill">AI 9:16 STUDIO</div>
+                      <div className="phone-captions">
+                        <span>KINETIC CAPTIONS</span>
+                        <strong>VIRAL HOOK</strong>
+                      </div>
+                      <div className="phone-waveform">
+                        <span /><span /><span /><span /><span /><span /><span />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {projects[activeProject].title === 'Motion studies' && (
                 <div className="motion-canvas"><div className="motion-dot" /><div className="motion-line line-a" /><div className="motion-line line-b" /><span>MOVE WITH INTENT</span></div>
               )}
             </div>
