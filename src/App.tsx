@@ -42,6 +42,16 @@ const projects = [
   },
   {
     number: '04',
+    title: 'Kakshya',
+    type: 'Platform / 2026',
+    description:
+      'An open-access, modern learning platform uniting Class 1–12 & competitive curricula (JEE/NEET) with an interactive 3D Virtual Science Lab.',
+    tags: ['Three.js', 'WebGL', 'Curriculum', 'EdTech'],
+    className: 'project-kakshya',
+    href: 'https://kakshya.vercel.app',
+  },
+  {
+    number: '05',
     title: 'Motion studies',
     type: 'Experiments / Ongoing',
     description:
@@ -116,7 +126,7 @@ function App() {
 
       <section className="work-section section" id="work">
         <div className="section-heading">
-          <p className="section-kicker">Selected work <span>04</span></p>
+          <p className="section-kicker">Selected work <span>05</span></p>
           <h2>Ideas, made<br /><em>useful.</em></h2>
           <p className="section-note">A small selection of projects I&apos;ve designed, built, and shipped.</p>
         </div>
@@ -181,6 +191,32 @@ function App() {
                       </div>
                       <div className="pixel-bottom-row">
                         <small>AI REMOVAL · OCR · WEBP</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {projects[activeProject].title === 'Kakshya' && (
+                <div className="kakshya-window">
+                  <div className="kakshya-frame">
+                    <div className="kakshya-top">
+                      <span /><span /><span />
+                      <small>Kakshya 3D Lab</small>
+                    </div>
+                    <div className="kakshya-body">
+                      <div className="kakshya-badge-row">
+                        <span className="kakshya-pill">CLASS 1–12 · JEE/NEET</span>
+                        <span className="kakshya-tag">WEBGL 3D</span>
+                      </div>
+                      <div className="kakshya-art">
+                        <div className="atom-core" />
+                        <div className="atom-ring atom-ring-1" />
+                        <div className="atom-ring atom-ring-2" />
+                        <div className="atom-ring atom-ring-3" />
+                      </div>
+                      <div className="kakshya-footer">
+                        <span>BOHR ATOM</span>
+                        <b>INTERACTIVE 3D LAB</b>
                       </div>
                     </div>
                   </div>
