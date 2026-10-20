@@ -133,17 +133,21 @@ function App() {
         <div className="project-showcase">
           <div className="project-list">
             {projects.map((project, index) => (
-              <button
+              <a
                 className={`project-row ${activeProject === index ? 'active' : ''}`}
                 key={project.title}
+                href={project.href}
+                target="_blank"
+                rel="noreferrer"
                 onMouseEnter={() => setActiveProject(index)}
+                onFocus={() => setActiveProject(index)}
                 onClick={() => setActiveProject(index)}
               >
                 <span className="project-number">{project.number}</span>
                 <span className="project-name">{project.title}</span>
                 <span className="project-type">{project.type}</span>
                 <ArrowUpRight className="project-arrow" size={20} />
-              </button>
+              </a>
             ))}
           </div>
           <article className={`project-card ${projects[activeProject].className}`}>
