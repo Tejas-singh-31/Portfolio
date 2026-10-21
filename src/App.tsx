@@ -52,6 +52,16 @@ const projects = [
   },
   {
     number: '05',
+    title: 'Bubbo',
+    type: 'Product / 2026',
+    description:
+      'A tiny desktop AI companion that lives quietly at the edge of your screen. Hover to chat, dock anywhere, or trigger with a shortcut.',
+    tags: ['Desktop AI', 'Productivity', 'Edge UI'],
+    className: 'project-bubbo',
+    href: 'https://bubbo.apexdevs.workers.dev/',
+  },
+  {
+    number: '06',
     title: 'Motion studies',
     type: 'Experiments / Ongoing',
     description:
@@ -126,7 +136,7 @@ function App() {
 
       <section className="work-section section" id="work">
         <div className="section-heading">
-          <p className="section-kicker">Selected work <span>05</span></p>
+          <p className="section-kicker">Selected work <span>06</span></p>
           <h2>Ideas, made<br /><em>useful.</em></h2>
           <p className="section-note">A small selection of projects I&apos;ve designed, built, and shipped.</p>
         </div>
@@ -221,6 +231,39 @@ function App() {
                       <div className="kakshya-footer">
                         <span>BOHR ATOM</span>
                         <b>INTERACTIVE 3D LAB</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {projects[activeProject].title === 'Bubbo' && (
+                <div className="bubbo-window">
+                  <div className="bubbo-frame">
+                    <div className="bubbo-top">
+                      <span /><span /><span />
+                      <small>Bubbo Helper</small>
+                    </div>
+                    <div className="bubbo-body">
+                      <div className="bubbo-badge-row">
+                        <span className="bubbo-pill">WINDOWS 10 & 11</span>
+                        <span className="bubbo-tag">CTRL + ALT + B</span>
+                      </div>
+                      <div className="bubbo-stage">
+                        <div className="bubbo-mascot">
+                          <div className="mascot-face">
+                            <span className="eye left"><i /></span>
+                            <span className="eye right"><i /></span>
+                            <div className="mascot-mouth" />
+                          </div>
+                        </div>
+                        <div className="bubbo-chat-bubble">
+                          <small>BUBBO</small>
+                          <p>Ask anything or save a quick note!</p>
+                        </div>
+                      </div>
+                      <div className="bubbo-footer">
+                        <span>EDGE DOCKED</span>
+                        <b>ALWAYS READY</b>
                       </div>
                     </div>
                   </div>
