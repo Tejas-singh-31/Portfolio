@@ -62,6 +62,16 @@ const projects = [
   },
   {
     number: '06',
+    title: 'ScrollGuard',
+    type: 'Product / 2026',
+    description:
+      'A focus-first tool designed to eliminate algorithmic short-form video doomscrolling while preserving intentional communication and posts.',
+    tags: ['Focus', 'Digital Wellbeing', 'Anti-Doomscroll'],
+    className: 'project-guard',
+    href: 'https://tejas-singh-31.github.io/scrollguard-site/',
+  },
+  {
+    number: '07',
     title: 'Motion studies',
     type: 'Experiments / Ongoing',
     description:
@@ -136,7 +146,7 @@ function App() {
 
       <section className="work-section section" id="work">
         <div className="section-heading">
-          <p className="section-kicker">Selected work <span>06</span></p>
+          <p className="section-kicker">Selected work <span>07</span></p>
           <h2>Ideas, made<br /><em>useful.</em></h2>
           <p className="section-note">A small selection of projects I&apos;ve designed, built, and shipped.</p>
         </div>
@@ -264,6 +274,43 @@ function App() {
                       <div className="bubbo-footer">
                         <span>EDGE DOCKED</span>
                         <b>ALWAYS READY</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {projects[activeProject].title === 'ScrollGuard' && (
+                <div className="guard-window">
+                  <div className="guard-frame">
+                    <div className="guard-top">
+                      <span /><span /><span />
+                      <small>ScrollGuard Shield</small>
+                    </div>
+                    <div className="guard-body">
+                      <div className="guard-badge-row">
+                        <span className="guard-pill">FOCUS ACTIVE</span>
+                        <span className="guard-tag">FEEDS BLOCKED</span>
+                      </div>
+                      <div className="guard-stage">
+                        <div className="guard-shield">
+                          <div className="shield-icon">🛡️</div>
+                        </div>
+                        <div className="guard-status-card">
+                          <div className="status-row">
+                            <span className="status-dot green" />
+                            <span>DMS &amp; POSTS</span>
+                            <b>ALLOWED</b>
+                          </div>
+                          <div className="status-row blocked">
+                            <span className="status-dot red" />
+                            <span>REELS FEED</span>
+                            <b>SHIELDED</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="guard-footer">
+                        <span>ZERO REELS</span>
+                        <b>INTENTIONAL ONLY</b>
                       </div>
                     </div>
                   </div>
