@@ -55,8 +55,8 @@ const projects = [
     title: 'Bubbo',
     type: 'Product / 2026',
     description:
-      'A tiny desktop AI companion that lives quietly at the edge of your screen. Hover to chat, dock anywhere, or trigger with a shortcut.',
-    tags: ['Desktop AI', 'Productivity', 'Edge UI'],
+      'A cute desktop AI companion that lives quietly at the edge of your screen. Slide to peek, save quick notes locally, launch apps, or summon it instantly with Ctrl+Alt+B.',
+    tags: ['Desktop AI', 'Edge-Docked', 'Ctrl+Alt+B', 'Windows 10/11'],
     className: 'project-bubbo',
     href: 'https://bubbo.apexdevs.workers.dev/',
   },
