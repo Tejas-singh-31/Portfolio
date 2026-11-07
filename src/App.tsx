@@ -52,13 +52,13 @@ const projects = [
   },
   {
     number: '05',
-    title: 'Bubbo',
+    title: 'Kelvira',
     type: 'Product / 2026',
     description:
-      'A cute desktop AI companion that lives quietly at the edge of your screen. Slide to peek, save quick notes locally, launch apps, or summon it instantly with Ctrl+Alt+B.',
-    tags: ['Desktop AI', 'Edge-Docked', 'Ctrl+Alt+B', 'Windows 10/11'],
-    className: 'project-bubbo',
-    href: 'https://bubbo.apexdevs.workers.dev/',
+      'A lightweight Windows assistant docked at your screen edge: quick voice input, one-click app launching, local quick notes, and AI answers.',
+    tags: ['Desktop AI', 'Edge-Docked', 'Voice (Ctrl+Alt+Space)', 'Windows 10/11'],
+    className: 'project-kelvira',
+    href: 'https://kelvira.apexdevs.workers.dev/',
   },
   {
     number: '06',
@@ -246,17 +246,17 @@ function App() {
                   </div>
                 </div>
               )}
-              {projects[activeProject].title === 'Bubbo' && (
+              {projects[activeProject].title === 'Kelvira' && (
                 <div className="bubbo-window">
                   <div className="bubbo-frame">
                     <div className="bubbo-top">
                       <span /><span /><span />
-                      <small>Bubbo Helper</small>
+                      <small>Kelvira Assistant</small>
                     </div>
                     <div className="bubbo-body">
                       <div className="bubbo-badge-row">
                         <span className="bubbo-pill">WINDOWS 10 & 11</span>
-                        <span className="bubbo-tag">CTRL + ALT + B</span>
+                        <span className="bubbo-tag">CTRL + ALT + SPACE</span>
                       </div>
                       <div className="bubbo-stage">
                         <div className="bubbo-mascot">
@@ -267,13 +267,13 @@ function App() {
                           </div>
                         </div>
                         <div className="bubbo-chat-bubble">
-                          <small>BUBBO</small>
-                          <p>Ask anything or save a quick note!</p>
+                          <small>KELVIRA</small>
+                          <p>Ask by voice or text. Launch your apps in one click.</p>
                         </div>
                       </div>
                       <div className="bubbo-footer">
                         <span>EDGE DOCKED</span>
-                        <b>ALWAYS READY</b>
+                        <b>VOICE &amp; APPS</b>
                       </div>
                     </div>
                   </div>
