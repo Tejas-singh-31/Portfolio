@@ -38,7 +38,7 @@ const projects = [
       'A fast, 100% client-side image and PDF studio in the browser. Zero server upload, AI background removal, smart compression, and OCR.',
     tags: ['Client-side AI', 'Canvas API', 'PDF Tools'],
     className: 'project-pixel',
-    href: 'https://pixelkit-self.vercel.app/',
+    href: 'https://pixelkit.apexdevs.workers.dev/',
   },
   {
     number: '04',
@@ -48,7 +48,7 @@ const projects = [
       'An open-access, modern learning platform uniting Class 1–12 & competitive curricula (JEE/NEET) with an interactive 3D Virtual Science Lab.',
     tags: ['Three.js', 'WebGL', 'Curriculum', 'EdTech'],
     className: 'project-kakshya',
-    href: 'https://kakshya.vercel.app',
+    href: 'https://kakshya.apexdevs.workers.dev/',
   },
   {
     number: '05',
