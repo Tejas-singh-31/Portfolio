@@ -78,7 +78,7 @@ const projects = [
       'A high-performance cross-browser Manifest V3 ad blocker with network-level DNR speed, YouTube 16x ad acceleration & skip, anti-adblock bypass, and zero telemetry.',
     tags: ['Manifest V3', 'DNR Blocker', 'YouTube Skipper', 'Zero Telemetry'],
     className: 'project-adshield',
-    href: 'https://github.com/Tejas-singh-31/adshield',
+    href: 'https://adshield.apexdevs.workers.dev/',
   },
   {
     number: '08',
