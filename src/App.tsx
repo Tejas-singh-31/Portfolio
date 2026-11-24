@@ -72,6 +72,16 @@ const projects = [
   },
   {
     number: '07',
+    title: 'AdShield',
+    type: 'Extension / 2026',
+    description:
+      'A high-performance cross-browser Manifest V3 ad blocker with network-level DNR speed, YouTube 16x ad acceleration & skip, anti-adblock bypass, and zero telemetry.',
+    tags: ['Manifest V3', 'DNR Blocker', 'YouTube Skipper', 'Zero Telemetry'],
+    className: 'project-adshield',
+    href: 'https://github.com/Tejas-singh-31/adshield',
+  },
+  {
+    number: '08',
     title: 'Motion studies',
     type: 'Experiments / Ongoing',
     description:
@@ -146,7 +156,7 @@ function App() {
 
       <section className="work-section section" id="work">
         <div className="section-heading">
-          <p className="section-kicker">Selected work <span>07</span></p>
+          <p className="section-kicker">Selected work <span>08</span></p>
           <h2>Ideas, made<br /><em>useful.</em></h2>
           <p className="section-note">A small selection of projects I&apos;ve designed, built, and shipped.</p>
         </div>
@@ -311,6 +321,48 @@ function App() {
                       <div className="guard-footer">
                         <span>ZERO REELS</span>
                         <b>INTENTIONAL ONLY</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {projects[activeProject].title === 'AdShield' && (
+                <div className="adshield-window">
+                  <div className="adshield-frame">
+                    <div className="adshield-top">
+                      <span /><span /><span />
+                      <small>AdShield MV3 Engine</small>
+                    </div>
+                    <div className="adshield-body">
+                      <div className="adshield-badge-row">
+                        <span className="adshield-pill">MANIFEST V3 · CHROME &amp; FIREFOX</span>
+                        <span className="adshield-tag">NATIVE DNR SPEED</span>
+                      </div>
+                      <div className="adshield-stage">
+                        <div className="adshield-shield">
+                          <div className="shield-symbol">🛡️</div>
+                        </div>
+                        <div className="adshield-status-card">
+                          <div className="status-metric">
+                            <span className="metric-dot blue" />
+                            <span>ADS &amp; TRACKERS</span>
+                            <b>BLOCKED</b>
+                          </div>
+                          <div className="status-metric">
+                            <span className="metric-dot cyan" />
+                            <span>YOUTUBE VIDEO</span>
+                            <b>16X AUTO-SKIP</b>
+                          </div>
+                          <div className="status-metric">
+                            <span className="metric-dot green" />
+                            <span>TELEMETRY</span>
+                            <b>0% / ZERO LOGS</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="adshield-footer">
+                        <span>ZERO CPU OVERHEAD</span>
+                        <b>SIGNED FILTERS</b>
                       </div>
                     </div>
                   </div>
